@@ -1,0 +1,21 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+  test:
+    working_dir: /app
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: [ "make", "test"]
+
+  db:
+    image: postgres
+    logging:
+      driver: none
+    environment:
+      POSTGRES_DB: test
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
