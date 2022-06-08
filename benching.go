@@ -77,8 +77,7 @@ func benchmarkUpdatesSqlite() {
 func benchmarkSelectSqlite() {
 	db := sqlite()
 
-	db.Close()
-	db = sqlite()
+	defer db.Close()
 
 	benchmarkSelect(db)
 }
