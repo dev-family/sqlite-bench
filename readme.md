@@ -1,10 +1,16 @@
-# How to run
+<a href="https://dev.family/?utm_source=github&utm_medium=sqlite-bench&utm_campaign=readme"><img width="auto" center src="https://github.com/dev-family/sqlite-bench/blob/main/sqlite-bench.png?raw=true" /></a>
+
+# PostgreSQL & SQLite Speed Test
+
+Suddenly, we’ve discovered that SQLite works much faster in some situations than PostgreSQL. Here are the proofs
+
+### How to run
 
 ```bash
 $ docker-compose up
 ```
 
-# Result
+### Result
 
 ```
 test_1  | goos: linux
