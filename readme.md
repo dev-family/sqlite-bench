@@ -2,7 +2,14 @@
 
 # PostgreSQL & SQLite Speed Test
 
-Suddenly, we’ve discovered that SQLite works much faster in some situations than PostgreSQL. Here are the proofs
+We tried to compare the speed of SQLite and PostgreSQL during the simplest operations of inserting, updating and extracting data from a spreadsheet.  
+You should know that SQLite is a single file, while PostgreSQL is a whole server with many additional functions.  
+As we can see, the speed of SQLite due to its simplicity significantly exceeds PostgreSQL. For example:
+- The insertion speed is 10 times higher.
+- The sampling rate turned out to be 30 times higher.
+- The update rate is almost identical to PostgreSQL.
+
+That’s why we can conclude that SQLite will be an excellent choice if you need a database to store a small amount of data and do not need to do complex manipulations.
 
 ### How to run
 
